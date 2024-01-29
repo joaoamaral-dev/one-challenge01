@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Codificador de Texto - Challenge 01</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Cabeçalho -->
+    <header>
+      <img src="./assets/logo-claro.png" alt="Logo Alura" id="logo-alura" />
+      <a href="#" id="modo-escuro" onclick="mudarEstilo()"
+        >Ativar modo escuro</a
+      >
+    </header>
+
+    <!-- Conteúdo-->
+    <main>
+      <div id="main-section">
+        <div id="input-area">
+          <textarea
+            name="codificador"
+            cols="30"
+            rows="10"
+            placeholder="Digite seu texto"
+            id="area-de-texto"
+          ></textarea>
+          <div id="linha__texto">
+            <img src="./assets/atencao.png" alt="!" id="atencao" />
+            <p id="attention">Apenas letras minúsculas e sem acento.</p>
+          </div>
+          <div id="container-botoes">
+            <a
+              href="#"
+              class="botao"
+              onclick="executarAcao('criptografar', document.getElementById('area-de-texto').value)"
+              >Criptografar</a
+            >
+            <a
+              href="#"
+              class="botao"
+              onclick="executarAcao('descriptografar', document.getElementById('area-de-texto').value)"
+              >Descriptografar</a
+            >
+          </div>
+        </div>
+      </div>
+      <section id="output">
+        <img
+          src="./assets/img-modoclaro.png"
+          alt="Menino curioso"
+          id="img-section"
+        />
+        <h3 id="title">Nenhuma mensagem encontrada</h3>
+        <p id="description">
+          Digite um texto que você deseja criptografar ou descriptografar.
+        </p>
+        </button>
+      </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer id="footer">
+      <a href="https://github.com/joaoamaral-dev"
+        ><img src="./assets/github.png" alt="Github" class="redes"
+      /></a>
+      <a href="https://www.linkedin.com/in/jo%C3%A3o-victor-amaral-545684121/"
+        ><img src="./assets/linkedin.png" alt="Linkedin" class="redes"
+      /></a>
+      <p id="texto-rodape">&copy; João Amaral - 2024 - Oracle Next Education</p>
+    </footer>
+
+    <!-- Script -->
+    <script src="script.js"></script>
+  </body>
+</html>
